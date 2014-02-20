@@ -1,16 +1,25 @@
 var factorialize = function(integer) {
 var storageArray = [];
-  if (integer === 0 || integer === 1) {
+  if (integer < 0){
+    return "Not a positive whole number"
+  }
+  
+  if (integer.toString().indexOf(".") > -1) {
+    return "Not a positive whole number"
+  } 
+
+    if (integer === 0) {
     return 1;
   } 
-  if (integer > 1) {
+  
+  if (integer > 0) {
     for (var i = 0; i < integer; i++) {
       storageArray += (integer-i)
     }
   storageArray = storageArray.split('').map(Number)
   storageArray = storageArray.reduce(function(x, y) {return x*y } );
-  
   };  
+  
   return storageArray
 };
 
