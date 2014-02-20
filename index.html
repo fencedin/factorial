@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Queen Attack Detector</title>
+  </head>  
+  <body>
+    <div class="container">
+      <h1>Can the Queen Attack It?</h1>
+      <form id="queen-attack">
+        <div class="form-group">
+          <label for="queenx">Enter X coordinate for the Queen:</label>
+          <input id="queenx" type="text">
+        </br>
+          <label for="queeny">Enter Y coordinate for the Queen:</label>
+          <input id="queeny" type="text">
+        </br>
+          <label for="piecex">Enter X coordinate for the Piece:</label>
+          <input id="piecex" type="text">
+        </br>
+          <label for="piecey">Enter Y coordinate for the Piece :</label>
+          <input id="piecey" type="text">
+        </div>
+
+        <button type="submit" id="btn">Find out!</button>
+      </form>
+
+      <div id="result">
+        <p>The queen can <span class="not"></span>attack that piece.</p>
+      </div>
+    </div>
+  </body>
+</html>
